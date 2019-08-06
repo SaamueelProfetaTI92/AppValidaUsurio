@@ -2,4 +2,6 @@
     <string name="app_name">AppValidaUsuário</string>
     <string name="resposta_usuario">Resposta Usuário</string>
     <string name="voltar">Voltar</string>
+    <string name="usuario">Usuário</string>
+    <string name="Senha">Senha</string>
 </resources>

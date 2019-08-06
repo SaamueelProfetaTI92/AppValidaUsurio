@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:hint="Usuário"
+        android:hint="@string/usuario"
         android:inputType="textPersonName"
         android:maxLength="20"
         android:padding="20dp" />
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:hint="Senha"
+        android:hint="@string/Senha"
         android:inputType="textPassword"
         android:maxLength="20"
         android:padding="20dp" />
