@@ -32,13 +32,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Entrar" />
+        android:text="@string/entrar" />
 
     <Button
         android:id="@+id/btnSair"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Sair" />
+        android:text="@string/sair" />
 
 </LinearLayout>

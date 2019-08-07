@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     EditText txtUsuario, txtSenha;
     Button btnEntrar, btnSair;
 
+    public static final String VALOR_LBL = "br.sp.senac.appvalidausurio.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,8 +39,17 @@ public class MainActivity extends AppCompatActivity {
 
                 if (usuario.equals("senac") && senha.equals("senac")) {
 
-                    startActivity(new Intent(getApplicationContext(), RespondeUsuario_Activity.class));
+                   // startActivity(new Intent(getApplicationContext(), RespondeUsuario_Activity.class));
+
+                    Intent intent = new Intent(getApplicationContext(), RespondeUsuario_Activity.class);
+
+                    String message = txtUsuario.getText().toString();
+                    intent.putExtra(VALOR_LBL, message);
+
+                    startActivity(intent);
                     finish();
+
+
                 } else {
                     Toast.makeText(getApplicationContext(), "Usuário ou senha invalidos", Toast.LENGTH_SHORT).show();
                     txtUsuario.setText("");
@@ -47,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
                     txtUsuario.requestFocus();
 
                 }
-
             }
         });
 

@@ -4,30 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RespondeUsuario_Activity"
     android:orientation="vertical"
-    >
+    tools:context=".RespondeUsuario_Activity">
 
     <TextView
+        android:id="@+id/lblRespostaUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/resposta_usuario"
         android:padding="30dp"
+        android:text="@string/resposta_usuario"
         android:textAlignment="center"
         android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/voltar"
+        android:textSize="20sp"
         android:textStyle="bold"
+
         />
-
-<Button
-    android:id="@+id/btnVoltar"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:text="@string/voltar"
-    android:textSize="20sp"
-    android:textStyle="bold"
-
-    />
 
 
 </LinearLayout>
