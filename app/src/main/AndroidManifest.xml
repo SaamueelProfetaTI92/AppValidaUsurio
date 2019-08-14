@@ -9,9 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Cadastrar_Activity"></activity>
         <activity
-            android:name=".Splash_Activity"
+            android:name=".CadastrarTeste"
             android:theme="@style/temaSemBarra">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,8 +18,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Cadastrar_Activity"
+            android:theme="@style/temaSemBarra">
+
+        </activity>
+        <activity
+            android:name=".Splash_Activity"
+            android:theme="@style/temaSemBarra" />
         <activity android:name=".RespondeUsuario_Activity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
